@@ -16,7 +16,7 @@
 
 ### The challenge
 
-- Build out the project to the designs From Youtube Inspiration.
+- Build out the project to the designs From Cofena orignal site Inspiration.
 
 ### Links
 
