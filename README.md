@@ -20,8 +20,8 @@
 
 ### Links
 
-- Solution URL: [Solution Link](https://github.com/iamhuraira/First_Website-)
-- Live Site URL: [Live Site ](https://iamhuraira.github.io/First_Website-/)
+- Solution URL: [Solution Link](https://github.com/iamhuraira/Cofena_Website)
+- Live Site URL: [Live Site ](https://iamhuraira.github.io/Cofena_Website/)
 
 ## My process
 
