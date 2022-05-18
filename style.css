@@ -60,6 +60,10 @@ a{
 .align-item-center{
     align-items: center;
 }
+
+.main-menu .site-logo{
+    display: none;
+}
 .header-top-left{
     
 }
@@ -470,7 +474,7 @@ p,li, span{
     
 }
 .not-show{
-    transform: translateX(300px);
+    transform: translateX(315px);
 }
 .show{
     transform: translateX(0px);
@@ -583,7 +587,19 @@ p,li, span{
     color: #c7a17a;
 }
 
+/* Side Nav */
 
+.side_nav ul{
+    display: flex;
+    flex-direction: column;
+}
+.side_nav ul a{
+    display: block;
+}
+.side_nav ul .side-sub-menu{
+
+    
+}
 /* Cart Bar css  */
 
 .cart-bar-wrapper {
@@ -779,7 +795,7 @@ p,li, span{
 /* testimonial_area */
 
 .testimonial_area{
-    background-image: url("./assests/testimonial-bg-2.png");
+    background-image: url("./testimonial-bg-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 115px;
@@ -875,6 +891,7 @@ p,li, span{
     position: absolute;
     left: -95px;
     top: 50%;
+    right: auto;
     size: 14px;
     transform: translateY(-185%);
     background: transparent;
@@ -954,7 +971,7 @@ p,li, span{
      line-height: 22px;
      display: inline-block;
      font-family: "Jost", sans-serif;
-    margin-bottom: 23px;
+    margin-bottom:  23px;
 
  }
  .section_headings .title , .testimonial_headings_area  .title{
@@ -964,6 +981,7 @@ p,li, span{
      text-transform: uppercase;
      font-weight: 400;
      font-family: "Bebas Neue", cursive;
+     margin: 0;
  }
  .mt_none_30{
      margin-top:-30px;
@@ -1100,6 +1118,7 @@ p,li, span{
      text-transform: uppercase;
      font-weight: 400;
      font-family: "Bebas Neue", cursive;
+     margin: 0;
 }
 .blog_content{
     margin-top: -30px;
@@ -1307,7 +1326,7 @@ p,li, span{
     font-size: 15px;
     color: #a7a7a7;
     left:50%;
-    transform: translateX(-50px);
+    transform: translateX(-25px);
 
 }
 .arrow-top i{
@@ -1580,8 +1599,9 @@ form{
         font-size: 80px;
         line-height: 75px;
     }
+    
     .hero-thumb img {
-        transform: translateX(-65px);
+        transform: translateX(0px);
     }
     .hero-area .col-58{
         width: 58.3%;
@@ -1600,9 +1620,347 @@ form{
     .mlg-20{
         margin: 0 20px;
     }
+
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
+
+    
+
+    .feature-col{
+
+        width: 50%;
+       text-align: center;
+    }
+    .feature-wrapper{
+        border-top: 0px solid #E2DFDD;
+        text-align: center;
+    }
+    
+    .feature-wrapper .year{
+       margin: 0 auto;
+    }
+    .feature-wrapper .content .title {
+        margin: 5px;
+    }
+    .feature-wrapper .content p{
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #a7a7a7;
+        font-size: 16px;
+    }
+    
+    .item{
+        padding-right: 70px;
+    }
+    .div{
+     display: unset; 
+     left: unset; 
+     top: unset; 
+     right: unset; 
+    transform: translateY(40%);
+    }
+    .next_btn {
+        bottom: -15%;
+        right: 45%; 
+    }
+    .prew_btn{
+        bottom: -15%;
+        left: 45%;
+    }
+
+
+    .container{
+        max-width: 968px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+
+ 
+    
+     .col_25{
+         flex: 0 0 auto;
+         width: 50%;
+    
+     }
+     .col_25:nth-child(even){
+        margin-top: 30px;
+    }
+    .blog_content .col-3:nth-child(1) {
+        padding-left: 12px; 
+    }
+    .blog_content .col-3 {
+        width: calc(100% / 2);
+    }
+    .blog_content .col-3:nth-child(3) {
+         padding-right: 12px;
+    }
+
+
+
+
+
+
+    .footer-top .row .col-25 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .footer-top .row .col-33 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .footer-top .row .col-42 {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+    .footer-top .row .col-section:not(:first-child) {
+         padding-left: 0px; 
+    }
+
+
+
+    .footer-top .row .col-section .footer-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
+@media screen and (max-width: 1053px){
+    .hero-content p {
+        font-size: 16px;
+        
+    }
+    .main-menu .site-logo{
+        display: block;
+        padding-top: 10px;
+    }
+    .main-menu nav {
+        display: none;
+    }
+    .top-header .site-logo{
+        display: none;
+        
+    }
+    .header-top-left ul {
+        padding: 0 ;
+    }
+}
+@media screen and (max-width: 993px){
+    .hero-area .col-58 {
+        width: 100%;
+    }
+    .hero-content .title {
+        font-size: 70px;
+       
+    }
+    .flex-direction{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-area .col-41 {
+        width: 100%;
+    }
+    .video-btn {
+        right: 60px;
+    }
+    .btns {
+        justify-content: center;
+    }
+    .item {
+        padding-right: 0;
+    }
+    .container{
+        max-width: 720px;
+    }
+    .col_66 {
+        width: 100%;
+    }
+    .col_33 {
+        width: 100%;
+    }
+    .section_heading {
+        text-align: center;
+    }
+    .brn_wrapper {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .site-btn {
+        margin-right: 20px;
+    }
+    .brn_wrapper   .site-btn {
+        margin: 0 ;
+    }
+    .footer-top .row .col-25, .footer-top .row .col-33 ,.footer-top .row .col-42 {
 
+        width: 100%;
+    }
+    .col-58 {
+        width: 100%;
+    }
+    .col-end .social-links {
+        justify-content: start;
+        margin-top: 30px;
+    }
+    .footer-menu-area ul {
+        justify-content: center;
+    }
+    .footer-menu-area ul li:not(:last-child) {
+        margin-right: 25px;
+    }
+    .col-75 {
+        width:100%;
+    }
+    .col-25 {
+
+        width: 100%;
+        text-align: center !important;
+        margin-top: 30px;
+    }
+    .footer-logo-content p {
+        font-size: 16px;
+    }
+    .footer-top .row .col-42 {
+        width: 80%;
+    }
+}
+
+    @media screen and (max-width: 768px){
+       
+        .video-btn{
+            position: static;
+            margin-top: 30px;
+            bottom: 0;
+            right: 0; 
+        }
+        .hero-content .title {
+            font-size: 60px;
+           
+        }
+
+        .hero-thumb {
+            transform: translate(0,0);
+        }
+        .container{
+            max-width: 540px;
+        }
+        .feature-col {
+            width: 100%;
+        }
+        .item {
+            padding-right: 0;
+        }
+        .col_25 {
+            width: 100%;
+        }
+        .blog_content .col-3 {
+            width: 100%;
+        }
+        .footer-menu-area ul {
+        
+            flex-wrap: unset; 
+
+        }
+   .footer-top .row .col-42 {
+            width: 80%;
+        }
+
+    }
+    @media screen and (max-width: 625px){
+        .header-top-left {
+            flex-direction: column;
+        }
+        .header-top-left ul {
+            padding: 0;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+        .header-top-left ul li:not(:last-child) {
+            margin: 0; 
+        }
+        .header-top-left ul li {
+            margin-top: 10px;
+        }
+        .header-top-right {
+            margin-top: 10px;
+            flex-direction: column;
+        }
+        .header-top-right .site-btn {
+            margin: 10px 0 0 0 !important;
+        }
+        .hero-area ,.topgrade-area ,.blog-area{
+            overflow: hidden;
+        }
+        .footer-menu-area ul {
+            flex-wrap: wrap;
+        }
+        .shape{
+            overflow: hidden;
+            position: relative;
+        }
+        
+    }
+    @media screen and (max-width: 525px){
+        .col-42 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        .hero-content .title {
+            font-size: 50px;
+            line-height: 50px;
+           
+        }
+        .hero-content .btns {
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero-content .site-btn-1 {
+            margin: 10px 0 0 0;
+        }
+        .hero-content  .site-btn {
+             margin-right: 0px; 
+        }
+        .hero-content  .site-btn-2 {
+           
+         margin-right: 0px; 
+        
+        }
+        .section_headings .title, .testimonial_headings_area .title ,.section_heading .title{
+            
+            font-size: 35px;
+            line-height: 38px;
+         
+        }
+        
+    }
+    @media screen and (max-width: 325px){
+       
+        
+        .hero-content .title {
+            font-size: 45px;
+            line-height: 45px;
+        }
+
+
+
+
+        .footer-top .row .col-42 {
+            width: 100%;
+        }
+    }
 
 
 
